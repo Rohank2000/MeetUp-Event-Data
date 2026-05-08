@@ -29,7 +29,7 @@ const MeetUpSchema = new mongoose.Schema(
     eventTags: [
       {
         type: String,
-        enums: [
+        enum: [
           "PortfolioReview",
           "ArtificialIntelligence",
           "Entrepreneurship",
