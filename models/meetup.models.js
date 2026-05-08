@@ -29,7 +29,7 @@ const MeetUpSchema = new mongoose.Schema(
     eventTags: [
       {
         type: String,
-          required: true,
+        required: true,
         enum: [
           "PortfolioReview",
           "ArtificialIntelligence",
@@ -67,7 +67,7 @@ const MeetUpSchema = new mongoose.Schema(
       required: true,
     },
   },
-  { timeStamps: true }
+  { timestamps: true }
 );
 
 const MeetUpModel = mongoose.model("MeetUp", MeetUpSchema);
