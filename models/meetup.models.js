@@ -3,32 +3,32 @@ const mongoose = require("mongoose");
 const MeetUpSchema = new mongoose.Schema(
   {
     title: {
-      type: string,
+      type: String,
       required: true,
     },
     hostingParty: {
-      type: string,
+      type: String,
       required: true,
     },
     eventThumbnail: {
-      type: string,
+      type: String,
       required: true,
     },
     details: {
-      type: string,
+      type: String,
       required: true,
     },
     dressCode: {
-      type: string,
+      type: String,
       required: true,
     },
     ageRestriction: {
-      type: string,
+      type: String,
       required: true,
     },
     eventTags: [
       {
-        type: string,
+        type: String,
         enums: [
           "PortfolioReview",
           "ArtificialIntelligence",
@@ -45,24 +45,24 @@ const MeetUpSchema = new mongoose.Schema(
     },
     location: [
       {
-        type: string,
+        type: String,
         required: true,
       },
     ],
     price: {
-      type: string,
+      type: String,
       required: true,
     },
     speakerName: {
-      type: string,
+      type: String,
       required: true,
     },
     speakerDesignation: {
-      type: string,
+      type: String,
       required: true,
     },
     speakerImage: {
-      type: string,
+      type: String,
       required: true,
     },
   },

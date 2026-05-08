@@ -10,4 +10,4 @@ const ConnectToDatabase = async () => {
     .catch((error) => console.log("Not Connected to the Database", error));
 };
 
-module.exports = ConnectToDatabase;
+module.exports = {ConnectToDatabase};

@@ -110,5 +110,5 @@ app.post("/meetup", async (req, res) => {
 const PORT = 3000;
 
 app.listen(PORT, () => {
-  Console.log("Server Is Running on PORT - ", PORT);
+  console.log("Server Is Running on PORT - ", PORT);
 });
