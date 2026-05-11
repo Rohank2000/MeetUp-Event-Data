@@ -11,8 +11,8 @@ app.use(express.json());
 const cors = require("cors");
 
 const corsOptions = {
-  origin: "*",
-  credentials: true,
+origin: ["https://meet-up-frontend-ivory.vercel.app", "http://localhost:5173"], 
+    methods: ["GET", "POST", "PUT", "DELETE"],  credentials: true,
   optionSuccessStatus: 200,
 };
 
